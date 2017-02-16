@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.superplayer.library.SuperPlayer
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/view_super_player"/>
+</LinearLayout>
+<!-- <com.superplayer.library.SuperPlayer android:layout_height="match_parent"
+                                     android:layout_width="match_parent"
+                                     android:id="@+id/view_super_player">
+</com.superplayer.library.SuperPlayer>
+ <tv.danmaku.ijk.media.player.widget.IjkVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></tv.danmaku.ijk.media.player.widget.IjkVideoView>
+
+ -->

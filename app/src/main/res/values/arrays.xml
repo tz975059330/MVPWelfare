@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_home">
+        <item>旅行</item>
+        <item>动漫</item>
+        <item>美食</item>
+        <item>宠物</item>
+        <item>游戏</item>
+        <item>妹子</item>
+        <item>萌孩</item>
+        <item>美图</item>
+        <item>明星</item>
+        <item>礼物</item>
+        <item>汽车</item>
+    </string-array>
+    <string-array name="tab_live">
+        <item>斗鱼</item>
+        <item>熊猫</item>
+        <item>战旗</item>
+        <item>全民</item>
+        <item>龙珠</item>
+    </string-array>
+    <string-array name="tab_blog">
+        <item>CSDN</item>
+        <item>博客园</item>
+        <item>简书</item>
+    </string-array>
+</resources>
