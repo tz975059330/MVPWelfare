@@ -44,7 +44,7 @@ public class APIURL {
      */
     public static final String DOUYU_HOME = "https://www.douyu.com/directory/columnRoom/game";
     public static final String XIONGMAO_HOME = "http://www.panda.tv/all";
-    public static final String ZHANQI_HOME = "http://www.zhanqi.tv/api/static/v2.1/live/list/20/1.json";
+    public static final String ZHANQI_HOME = " https://m.zhanqi.tv/api/static/v2.1/live/list/20/1.json";
     public static final String QUANMIN_HOME = "http://www.quanmin.tv/json/play/list.json";
     public static final String LONGZHU_HOME = "http://longzhu.com/channels/all";
 

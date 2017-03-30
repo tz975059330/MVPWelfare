@@ -155,6 +155,7 @@ public class LiveMessage {
                         bean.setLiveTitle(one.getString("title"));
                         bean.setRoomImage(one.getString("bpic"));
                         list.add(bean);
+//                        bean.toString();
                     }
                     listener.onSuccess(list);
                 } catch (JSONException e) {
@@ -184,6 +185,11 @@ public class LiveMessage {
         }
     }
 
+    /**
+     * 获取单个房间播放详细
+     * @param list
+     * @param listener
+     */
     public void QuanMinTwoRequest(final List<LiveBean> list, final LiveFragmentModelImpl.OnloadLiveListListener
             listener) {
         final List<LiveBean> MyList = new ArrayList<>();
@@ -197,15 +203,10 @@ public class LiveMessage {
                         LiveBean bean = list.get(finalI);
                         JSONArray array = response.getJSONArray("room_lines");
                         JSONObject live = (JSONObject) array.get(0);
-                        String select = live.getJSONObject("hls").getString("main_pc");
-                       bean.setLiveUrl(live.getJSONObject("hls").getJSONObject(select).getString("src"));
+                        JSONObject select = live.getJSONObject("flv");
+                        JSONObject url = select.getJSONObject("5");
+                        bean.setLiveUrl(url.getString("src"));
                         MyList.add(bean);
-//                        System.out.println("---------"+bean.getIdRoom());
-//                        System.out.println("---------"+bean.getLiveName());
-//                        System.out.println("---------"+bean.getLiveTitle());
-//                        System.out.println("---------"+bean.getLiveUrl());
-//                        System.out.println("---------"+bean.getPeople());
-//                        System.out.println("---------"+bean.getRoomImage());
                         if (finalI == list.size() - 1) {
                             listener.onSuccess(MyList);
                         }

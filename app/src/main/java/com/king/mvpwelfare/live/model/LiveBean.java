@@ -1,5 +1,7 @@
 package com.king.mvpwelfare.live.model;
 
+import android.util.Log;
+
 import java.io.Serializable;
 
 /**
@@ -70,5 +72,11 @@ public class LiveBean implements Serializable{
 
     public void setRoomImage(String roomImage) {
         this.roomImage = roomImage;
+    }
+
+    @Override
+    public String toString() {
+        Log.i("TAG", "toString: 播放地址"+ getLiveUrl()+"房间名："+getLiveName());
+        return super.toString();
     }
 }
